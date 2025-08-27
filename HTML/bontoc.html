@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Hometown Map</title>
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-image: url("Backgrond.png"); 
+      background-size: cover;       
+      background-position: center; 
+      background-attachment: fixed;
+    }
+    h1 {
+      color: darkgreen;
+    }
+    img {
+      max-width: 90%;
+      height: Auto;
+      border: 3px solid #555;
+      border-radius: 30px;
+    }
+    </style>
+</head>
+<body>
+
+  <h1>My Hometown: Bontoc, Southern Leyte</h1>
+  <p>Click on location to learn more:</p>
+
+  <!-- Image with clickable areas -->
+  <img src="poblacion.png" usemap="#hometown-map" alt="Bontoc Map">
+
+   <p style="font-size: 18px;" title="About Bontoc">
+        <strong>Bontoc</strong> is a picturesque town in the province of <em>Southern Leyte</em>, Philippines. 
+        It's known for its <mark>natural beauty, friendly locals, and rich culture</mark>. 
+        The town lies between the mountains and the sea, offering both <i><b>serenity and adventure</i></b>.
+    </p>
+
+     <hr>
+
+  <map name="hometown-map">
+    <!-- Bontoc Terminal -->
+    <area shape="circle" coords="631,247,50" 
+         href="terminal.html" 
+          target="_blank"
+          alt="Bontoc Terminal" 
+          title="Bontoc Terminal">
+
+    <!-- Southern Leyte State University -->
+    <area shape="rect" coords="360,267,421,349" 
+          href="slsu.html" 
+          target="_blank" 
+          alt="Southern Leyte State University" 
+          title="Southern Leyte State University">
+
+
+    <!-- Tops Mountain Resort -->
+    <area shape="rect" coords="381,632,445,705" 
+          href="Topresort.html" 
+          target="_blank" 
+          alt="Tops Mountain Resort" 
+          title="Tops Mountain Resort">
+
+  </map>
+
+      <button onclick="window.location.href='https://www.facebook.com/southernleyteprovinceofficialpage'" 
+            title="Facebook Page" style="padding: 10px; font-size: 16px;">
+        Visit Official Facebook
+    </button>
+
+    <h5 id="tourism">Tourism Highlights</h5>
+    <p>Jump to <a href="https://southernleyte.gov.ph/bontoc/bontoc-tourism/" title="Jump to tourism section">Tourism Section</a></p>
+
+    <br><br>
+
+</body>
+</html>
